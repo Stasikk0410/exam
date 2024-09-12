@@ -1,0 +1,144 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: yellow;
+    color: black;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+header .logo img {
+    width: 100px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header button {
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+header button:hover {
+    background-color: #ddd;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+/* Flexbox example */
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Dark theme */
+.dark-theme {
+    background-color: black;
+    color: white;
+}
+
+/* Cursor change */
+button {
+    cursor: pointer;
+}
+
+
+/* Pricing Table Styles */
+#pricing {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+thead {
+    background-color: #333;
+    color: white;
+}
+
+th {
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+td {
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    table, th, td {
+        display: block;
+        width: 100%;
+    }
+
+    th, td {
+        text-align: left;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    th::before, td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 45%;
+        padding-left: 10px;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+}
