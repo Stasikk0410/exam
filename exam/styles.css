@@ -1,4 +1,3 @@
-/* Base styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -8,7 +7,6 @@ body {
     color: black;
 }
 
-/* Header */
 header {
     display: flex;
     justify-content: space-between;
@@ -46,7 +44,6 @@ header button:hover {
     background-color: #ddd;
 }
 
-/* Footer */
 footer {
     background-color: #333;
     color: white;
@@ -61,26 +58,22 @@ footer nav ul {
     gap: 20px;
 }
 
-/* Flexbox example */
 section {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-/* Dark theme */
 .dark-theme {
     background-color: black;
     color: white;
 }
 
-/* Cursor change */
 button {
     cursor: pointer;
 }
 
 
-/* Pricing Table Styles */
 #pricing {
     padding: 20px;
     background-color: #f9f9f9;
@@ -119,7 +112,6 @@ td {
     font-size: 16px;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     table, th, td {
         display: block;
